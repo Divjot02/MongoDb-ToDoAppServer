@@ -1,0 +1,76 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .container {
+    display: flex;
+    gap: 25px;
+    width: 80vw;
+    height: 80vh;
+    margin: 50px 50px;
+    padding: 20px 20px;
+  }
+  h2{
+    margin-left: 10px;
+    margin-right: 10px;
+   text-transform: uppercase;
+  
+  }
+  p{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 12px;
+  }
+
+  .left-pane {
+    flex: 1;
+    height: fit-content; 
+    border-style:solid;
+    border-color: burlywood;
+    overflow-y: auto;
+  }
+
+  .right-pane {
+    flex: 1;
+    height: fit-content; 
+    justify-content: center;
+    align-items: center;
+  }
+  
+  input[type="text"] {
+   width: auto;
+    padding: 10px;
+    border: none;
+    font-size: 35px;
+    font-style: oblique;
+    font-weight: bold;
+  }
+  #task-input:focus {
+    outline: none;
+  }
+  .complete{
+    text-decoration: line-through;
+  }
+ div.show-item{
+    display: flex;
+    align-items: center;
+  
+ }
+ 
+  div.items{
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    border-bottom: 1px solid #ccc;
+    padding: 6px;
+    margin:2px 10px;
+  }
+  
+  input[type="checkbox"]{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+  }
