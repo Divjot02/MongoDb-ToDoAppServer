@@ -88,6 +88,7 @@ function showTodoInUI(todo) {
   // when click on delete button
   deleteButton.addEventListener("click", function (e) {
     const deleteId = e.target.parentElement.id;
+    console.log(deleteId, "hello");
     //DELETE request bhjenge
     deleteById(deleteId);
   });
@@ -132,6 +133,7 @@ function deleteById(deleteId) {
     })
     .then(function () {
       const item = document.getElementById(deleteId);
+      console.log("hello");
       item.remove();
     })
     .catch(function (err) {

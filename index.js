@@ -70,7 +70,6 @@ app.get("/todo-data", async function (req, res) {
   //read the data from database and send data as res
   try {
     const data = await TodoModel.find({});
-    console.log(data);
     res.status(200).json(data);
   } catch (err) {
     console.log(err);
@@ -105,7 +104,7 @@ app.delete("/delete", async function (req, res) {
       }
     });
     //delete the todo from db
-    await TodoModel.deleteOne({ id: delId });
+    await TodoModel.deleteOne({ _id: delId });
     res.status(200).json({ msg: "Deleted successfully" });
   } catch (err) {
     console.log(err);
